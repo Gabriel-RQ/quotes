@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-color: #c1c1c1;
+  --bg-color: #16161d;
+
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  background: var(--bg-color);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+a,
+button {
+  background-color: transparent;
+  border: var(--font-color) 1px solid;
+  border-radius: 1rem;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background 250ms ease-in;
+  width: auto;
+}
+
+:is(a, button):hover {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+.quote {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+/* @media screen and () */
